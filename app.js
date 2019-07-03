@@ -4,9 +4,11 @@ const ejs = require('ejs')
 const bodyParser = require('body-parser')
 const app = express();
 
-app.get('/', function(req, res){
+app.set('view engine', 'ejs');
+
+app.get('/blog', function(req, res){
     console.log('bruh moment')
-    res.render('home    ')
+    res.render('blog')
 })
 
 app.listen(3000, function(req, res){
