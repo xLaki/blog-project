@@ -9,8 +9,13 @@ app.set('view engine', 'ejs');
 app.use(express.static('./public'))
 
 app.get('/blog', function(req, res){
-    console.log('bruh moment')
     res.render('blog')
+})
+app.get('/create-blog', function(req, res){
+    res.render('create-blog')
+})
+app.get('/view-blog', function(req, res){
+    res.render('view-blog')
 })
 
 app.listen(3000, function(req, res){
