@@ -6,6 +6,8 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
+app.use(express.static('./public'))
+
 app.get('/blog', function(req, res){
     console.log('bruh moment')
     res.render('blog')
