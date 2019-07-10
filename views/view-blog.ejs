@@ -20,16 +20,17 @@
     <!-- this is all the info from and for the blog -->
     <div class="container mx-auto text-center">
             <div class="row">
-              <div class="col">col</div><br>
-              <br>
-              <br>
-
-              <div class="col">col</div>
-              <div class="w-100"></div>
-              <div class="col">col</div>
-              <div class="col">col</div>
+            <div class="col">
+            <br>
+            <br>
+            <br>
+            <ul class="list-group list-group-flush mt-5 text-dark">
+                <% for ( let i = ( currentBlogs.length - 1); i > 0;  i = i-1 ) { %>
+                    <li class="list-group-item" id="<%= currentBlogs[i].blogid %>" title="Body: <%= currentBlogs[i].blogbody %>"><%= currentBlogs[i].blogtitle %></li>
+                <% } %>
+            </ul>
             </div>
-          </div>
+     </div>
 </body>
 <script src="/js/main.js"></script>
 </html>
