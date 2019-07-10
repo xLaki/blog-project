@@ -9,22 +9,18 @@
     <link rel="stylesheet"  type="text/css" href="css/main.css">
 </head>
 <body class="mx-auto mt-5">
-        <nav>
-               <li><a href="/blog">Home Page</a></li>
-               <a href="/create-blog">Create blogs</a>
-        </nav>
     <div class="container mx-auto text-center">
         <h1>Global Scope</h1>
         <h3>View all the current blogs here!</h3>
         <h4>(Hover over the blog title to view the body!)</h4>
+        <br><br>
+        <h5><a href="/blog">Home</a></h5><br>
+        <h5><a href="/create-blog">Create a Blog</a></h5>
     </div>
+    <br>
     <!-- this is all the info from and for the blog -->
-    <div class="container mx-auto text-center">
-            <div class="row">
-            <div class="col">
-            <br>
-            <br>
-            <br>
+    <div class="container mx-auto mt-5 text-center">
+            <div class="mx-auto col">
             <ul class="list-group list-group-flush mt-5 text-dark">
                 <% for ( let i = ( currentBlogs.length - 1); i > 0;  i = i-1 ) { %>
                     <li class="list-group-item" id="<%= currentBlogs[i].blogid %>" title="Body: <%= currentBlogs[i].blogbody %>"><%= currentBlogs[i].blogtitle %></li>

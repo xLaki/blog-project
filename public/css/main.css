@@ -6,9 +6,9 @@ body {
 }
 
 .container {
-    background-color: #64726a;
+    background-color: #919593;
     margin-bottom: 20px;
-    padding-bottom: 15px;
+    padding: 15px;
 }
 
 .list-group-item {
@@ -20,7 +20,7 @@ body {
 }
 
 li:hover {
-    text-decoration-color: "red";
+    text-decoration-color: "underline";
     background: rgba(226, 226, 226);
     cursor: pointer;
 }
